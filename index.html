@@ -4,19 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Automated Responsive Image Markup</title>
 </head>
 <body>
     <h2>Automated Responsive Image Markup</h2>
-
-<picture>
-    <source src="img/responsive-sallie-mobile.png">
-    <source src="img/responsive-sallie-512.png" media="(min-width: 512px)">
-    <source src="img/responsive-sallie-1024.png" media="(min-width: 1024px)">
-    <source src="img/responsive-sallie-2048.png" media="(min-width: 2048px)">
-    <noscript><img src="img/responsive-sallie-512.png"></noscript>
-</picture>
-
+    <h3>This is my dog Sallie. 
+        <br>
+        She is going to be 15 years old on November 10th. 
+        <br>
+        Her picture is responsive
+    </h3>
+    <img srcset="img/responsive-sallie-mobile.png 312w,
+                img/responsive-sallie-512.png 512w,
+                img/responsive-sallie-1024.png 1024w"
+            sizes="(max-width: 30em) 30em, 100vw"
+            src="img/responsive-sallie-1024.png"
+            alt="Responsive Sallie" />
 
 </body>
 </html>
